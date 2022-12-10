@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7606531919527334330}
   - component: {fileID: 7606531919527334331}
   - component: {fileID: 7606531919527334309}
+  - component: {fileID: 2231737687524466735}
   m_Layer: 0
   m_Name: Realtime + Hoverbird Player
   m_TagString: Untagged
@@ -28,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _obsoleteAppKey: 
-  _normcoreAppSettings: {fileID: 0}
+  _normcoreAppSettings: {fileID: 11400000, guid: f23ca52f7227f0a48873ca5a73cdeb51, type: 2}
   _roomToJoinOnStart: Test Room
   _joinRoomOnStart: 1
 --- !u!114 &7606531919527334309
@@ -62,3 +64,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
   _prefab: {fileID: 6267176139253920899, guid: 78e8935bcc34544a494c2d462dd3eceb, type: 3}
+--- !u!114 &2231737687524466735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606531919527334328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e904cddab6f443d3b53014348d6beba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTarget: {fileID: 0}
+  _character: {fileID: 7606531919527334330}
