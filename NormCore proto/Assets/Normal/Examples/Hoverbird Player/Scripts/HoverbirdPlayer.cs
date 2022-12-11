@@ -95,8 +95,8 @@ namespace Normal.Realtime.Examples {
         private void CalculateTargetMovement() {
             // Get input movement. Multiple by 6.0 to increase speed.
             Vector3 inputMovement = new Vector3();
-            inputMovement.x = Input.GetAxisRaw("Horizontal") * 6.0f;
-            inputMovement.z = Input.GetAxisRaw("Vertical")   * 6.0f;
+            inputMovement.x = Input.GetAxisRaw("Horizontal") * 10.0f;
+            inputMovement.z = Input.GetAxisRaw("Vertical")   * 10.0f;
 
             // Get the direction the camera is looking parallel to the ground plane.
             Vector3    cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);
@@ -117,14 +117,14 @@ namespace Normal.Realtime.Examples {
             Vector3 velocity = _rigidbody.velocity;
 
             // Smoothly animate towards the target movement velocity
-            _movement = Vector3.Lerp(_movement, _targetMovement, Time.fixedDeltaTime * 5.0f);
+            _movement = Vector3.Lerp(_movement, _targetMovement, Time.fixedDeltaTime * 7.0f);
             velocity.x = _movement.x;
             velocity.z = _movement.z;
 
             // Jump
             if (_jumpThisFrame) {
                 // Instantaneously set the vertical velocity to 6.0 m/s
-                velocity.y = 6.0f;
+                velocity.y = 10.0f;
 
                 // Mark the player as currently jumping and clear the jump input
                 _jumping       = true;

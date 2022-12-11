@@ -361,6 +361,7 @@
 "Assets/Normal/Examples/Cube Player/Scripts/CubePlayerManager.cs"
 "Assets/Normal/Examples/Hoverbird Player/Scripts/HoverbirdPlayer.cs"
 "Assets/Normal/Examples/Hoverbird Player/Scripts/HoverbirdPlayerManager.cs"
+"Assets/Normal/Examples/Hoverbird Player/Scripts/Menu.cs"
 "Assets/Normal/Examples/VR Player/Scripts/VoiceMouthMove.cs"
 -langversion:9.0
 
